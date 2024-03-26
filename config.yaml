@@ -1,6 +1,6 @@
 settings:
   title: 'Status Page'
-  url: 'https://status-page.eidam.dev' # used for Slack messages
+  url: 'https://status.hariyonorizki.eu.org' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
@@ -34,7 +34,7 @@ monitors:
 #server list
   - id: serverlist
     name: KIKI Server Hosting Status
-    url: 'https://pages.dev'
+    url: 'https://pages.cloudflare.com/'
     method: GET
     expectStatus: 200
     followRedirect: false
@@ -42,7 +42,7 @@ monitors:
 
   - id: server1
     name: Web Hosting 1 [hariyonorizki.eu.org]
-    url: 'https://pages.dev'
+    url: 'https://pages.cloudflare.com/'
     method: GET
     expectStatus: 200
     followRedirect: false
