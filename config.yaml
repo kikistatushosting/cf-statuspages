@@ -15,25 +15,85 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
-    description: 'You write code. They handle the rest.' # default=empty
-    url: 'https://workers.cloudflare.com/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
-
-  - id: www-cloudflare-com
-    name: www.cloudflare.com
-    description: 'Built for anything connected to the Internet.'
-    url: 'https://www.cloudflare.com'
+  - id: homepage
+    name: Landing Pages [hariyonorizki.eu.org]
+    url: 'https://hariyonorizki.eu.org'
     method: GET
     expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
+    followRedirect: false
+    linkable: true
 
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
+  - id: baseserver
+    name: Server Status Runtime [kikiserverstatus.eu.org]
+    url: 'https://kikiserverstatus.eu.org'
     method: GET
     expectStatus: 200
+    followRedirect: false
+    linkable: true
+
+#server list
+  - id: serverlist
+    name: KIKI Server Hosting Status
+    url: 'https://pages.dev'
+    method: GET
+    expectStatus: 200
+    followRedirect: false
+    linkable: false
+
+  - id: server1
+    name: Web Hosting 1 [hariyonorizki.eu.org]
+    url: 'https://pages.dev'
+    method: GET
+    expectStatus: 200
+    followRedirect: false
+    linkable: true
+
+  - id: server2
+    name: Web Hosting 2 [hariyonorizki.skom.id]
+    url: 'https://hariyonorizki.skom.id'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: true
+
+  - id: server3
+    name: Game Hosting 1 [Minecraft Bungeecord - 🇺🇸]
+    url: 'https://bungee-us.game.hariyonorizki.skom.id'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: true
+
+  - id: server4
+    name: Game Hosting 2 [Minecraft Lobby - 🇺🇸]
+    url: 'https://lobby-us.game.hariyonorizki.skom.id'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: true
+
+  - id: server5
+    name: Game Hosting 3 [Minecraft Survival - 🇺🇸]
+    url: 'https://survival-us.game.hariyonorizki.skom.id'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: true
+    
+#project server group
+  - id: projectmain
+    name: KIKI Web Projet Status
+    url: 'https://harahasanwedding.pages.dev'
+    method: GET
+    expectStatus: 200
+    followRedirect: false
+    linkable: false
+
+  - id: project1
+    name: Undangan Wedding Hardiyanti & Hasan
+    description: 'Projek Undangan Pernikahan Digital untuk mempelai Hardiyanti & Hasan'
+    url: 'https://harahasanwedding.pages.dev'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: true
