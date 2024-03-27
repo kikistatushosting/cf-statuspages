@@ -25,7 +25,7 @@ monitors:
 
   - id: baseserver
     name: Server Status Runtime [kikiserverstatus.eu.org]
-    url: 'https://kikiserverstatus.eu.org'
+    url: 'https://status.kikistatusserver.workers.dev'
     method: GET
     expectStatus: 200
     followRedirect: false
@@ -58,7 +58,7 @@ monitors:
 
   - id: server3
     name: Game Hosting 1 [Minecraft Bungeecord - 🇺🇸]
-    url: 'https://bungee-us.game.hariyonorizki.skom.id'
+    url: 'https://magmanode.com'
     method: GET
     expectStatus: 200
     followRedirect: true
@@ -66,15 +66,15 @@ monitors:
 
   - id: server4
     name: Game Hosting 2 [Minecraft Lobby - 🇺🇸]
-    url: 'https://lobby-us.game.hariyonorizki.skom.id'
+    url: 'https://magmanode.com'
     method: GET
     expectStatus: 200
     followRedirect: true
     linkable: true
 
   - id: server5
-    name: Game Hosting 3 [Minecraft Survival - 🇺🇸]
-    url: 'https://survival-us.game.hariyonorizki.skom.id'
+    name: Game Hosting 3 [Minecraft Survival - 🇮🇩]
+    url: 'https://magmanode.com'
     method: GET
     expectStatus: 200
     followRedirect: true
