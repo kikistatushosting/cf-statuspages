@@ -1,5 +1,5 @@
 settings:
-  title: 'Kk Status Page'
+  title: 'Status Page'
   url: 'https://status.hariyonorizki.eu.org' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
@@ -25,7 +25,7 @@ monitors:
 
   - id: baseserver
     name: Server Status Runtime [kikiserverstatus.eu.org]
-    url: 'https://status.kikistatusserver.workers.dev'
+    url: 'https://cf-workers-status-page-production.kikistatusserver.workers.dev'
     method: GET
     expectStatus: 200
     followRedirect: false
@@ -62,7 +62,7 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: true
-    linkable: true
+    linkable: false
 
   - id: server4
     name: Game Hosting 2 [Minecraft Lobby - 🇺🇸]
@@ -70,7 +70,7 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: true
-    linkable: true
+    linkable: false
 
   - id: server5
     name: Game Hosting 3 [Minecraft Survival - 🇮🇩]
@@ -78,11 +78,11 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: true
-    linkable: true
+    linkable: false
     
 #project server group
   - id: projectmain
-    name: KIKI Web Projet Status
+    name: KIKI Web Project Status
     url: 'https://harahasanwedding.pages.dev'
     method: GET
     expectStatus: 200
