@@ -45,6 +45,7 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
     <div className="min-h-screen">
       <Head>
         <title>{config.settings.title}</title>
+        <meta name="google-site-verification" content="fxFIlX0iybKp432o-08KmDJAvmPwc-DD48vBeVT2flQ" />
         <link rel="stylesheet" href="./style.css" />
         <script>
           {`
