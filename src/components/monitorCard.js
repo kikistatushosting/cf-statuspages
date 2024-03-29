@@ -32,7 +32,7 @@ export default function MonitorCard({ key, monitor, data }) {
           )}
           {(monitor.linkable === true || monitor.linkable === undefined) ?
             (
-              <a href={monitor.url} target="_blank">
+              <a href={monitor.urlLink} target="_blank">
                 <div className="text-xl">{monitor.name}</div>
               </a>
             )
