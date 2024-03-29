@@ -46,7 +46,7 @@ export async function processCronTrigger(event) {
       method: monitor.method || 'GET',
       redirect: monitor.followRedirect ? 'follow' : 'manual',
       headers: {
-        'User-Agent': config.settings.user_agent || 'Server Status Pinger,a Hariyono Rizki Network, Scans and Ping to check the uptime status of our Website/Server/Hostings. If you think your IP is private and would like to be excluded from our scans, please send IP addresses/domains to: scan-abuse@hariyonorizki.eu.org.',
+        'User-Agent': config.settings.user_agent || 'Server Status Pinger @ Hariyono Rizki Network station, Scans and Ping to check the uptime status of our Website/Server/Hostings. If you think your IP is private and would like to be excluded from our scans, please send IP addresses/domains to: scan-abuse@hariyonorizki.eu.org. - © 2024',
       },
     }
 
