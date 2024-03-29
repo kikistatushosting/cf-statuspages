@@ -32,15 +32,7 @@ monitors:
     followRedirect: true
     linkable: false
 
-#server list
-  - id: serverlist
-    name: KIKI Server Hosting Status
-    url: 'https://pages.cloudflare.com/'
-    method: GET
-    expectStatus: 200
-    followRedirect: false
-    linkable: false
-
+#server list group
   - id: server1
     name: Web Hosting 1 [hariyonorizki.eu.org]
     url: 'https://pages.cloudflare.com/'
@@ -85,16 +77,28 @@ monitors:
     expectStatus: 200
     followRedirect: true
     linkable: true
-    
-#project server group
-  - id: projectmain
-    name: KIKI Web Project Status
-    url: 'https://harahasanwedding.pages.dev'
+
+#API Website Group
+  - id: api1
+    name: API Email Sender Website Undangan [api.ulems.my.id]
+    url: 'https://api.ulems.my.id'
+    urlLink: 'https://api.ulems.my.id'
     method: GET
     expectStatus: 200
-    followRedirect: false
-    linkable: false
-
+    followRedirect: true
+    linkable: true
+    
+  - id: api2
+    name: API Cloudflare Pi-Hole Clone DNS [dns.cf-hole.workers.dev]
+    description: 'CF-Hole adalah ad & content-blocker, stub DNS-over-HTTPS (DoH) dan DNS-over-TLS (DoT) seperti Pi-Hole.'
+    url: 'https://serverless-dns.cf-hole.workers.dev/1:OPD_______8A_AYA4dMAoA=='
+    urlLink: 'https://serverless-dns.cf-hole.workers.dev/1:OPD_______8A_AYA4dMAoA=='
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: true
+    
+#project server group
   - id: project1
     name: Undangan Wedding Hardiyanti & Hasan
     description: 'Projek Undangan Pernikahan Digital untuk mempelai Hardiyanti & Hasan'
