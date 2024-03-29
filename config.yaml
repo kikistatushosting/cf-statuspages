@@ -18,6 +18,7 @@ monitors:
   - id: homepage
     name: Landing Pages [hariyonorizki.eu.org]
     url: 'https://hariyonorizki.eu.org'
+    urlLink : 'https://hariyonorizki.eu.org'
     method: GET
     expectStatus: 200
     followRedirect: false
@@ -43,6 +44,7 @@ monitors:
   - id: server1
     name: Web Hosting 1 [hariyonorizki.eu.org]
     url: 'https://pages.cloudflare.com/'
+    urlLink : 'https://hariyonorizki.eu.org'
     method: GET
     expectStatus: 200
     followRedirect: false
@@ -51,6 +53,7 @@ monitors:
   - id: server2
     name: Web Hosting 2 [hariyonorizki.skom.id]
     url: 'https://hariyonorizki.skom.id'
+    urlLink : 'https://hariyonorizki.skom.id'
     method: GET
     expectStatus: 200
     followRedirect: true
@@ -59,26 +62,29 @@ monitors:
   - id: server3
     name: Game Hosting 1 [Minecraft Bungeecord - 🇺🇸]
     url: 'https://magmanode.com'
+    urlLink : 'minecraft://connect?type=server&ip=mc.hariyonorizki.eu.org&port=11111'
     method: GET
     expectStatus: 200
     followRedirect: true
-    linkable: false
+    linkable: true
 
   - id: server4
     name: Game Hosting 2 [Minecraft Lobby - 🇺🇸]
     url: 'https://magmanode.com'
+    urlLink : 'minecraft://connect?type=server&ip=us-lobby.mc.hariyonorizki.eu.org&port=11111'
     method: GET
     expectStatus: 200
     followRedirect: true
-    linkable: false
+    linkable: true
 
   - id: server5
     name: Game Hosting 3 [Minecraft Survival - 🇮🇩]
     url: 'https://magmanode.com'
+    urlLink : 'minecraft://connect?type=server&ip=id-survival.mc.hariyonorizki.eu.org&port=11111'
     method: GET
     expectStatus: 200
     followRedirect: true
-    linkable: false
+    linkable: true
     
 #project server group
   - id: projectmain
@@ -93,6 +99,7 @@ monitors:
     name: Undangan Wedding Hardiyanti & Hasan
     description: 'Projek Undangan Pernikahan Digital untuk mempelai Hardiyanti & Hasan'
     url: 'https://harahasanwedding.pages.dev'
+    urlLink: 'https://harahasanwedding.pages.dev'
     method: GET
     expectStatus: 200
     followRedirect: true
