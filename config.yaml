@@ -25,11 +25,11 @@ monitors:
 
   - id: baseserver
     name: Server Status Runtime [kikiserverstatus.eu.org]
-    url: 'http://kikiserverstatus.eu.org/'
+    url: 'https://pages.cloudflare.com/'
     method: GET
     expectStatus: 200
     followRedirect: true
-    linkable: true
+    linkable: false
 
 #server list
   - id: serverlist
