@@ -69,7 +69,7 @@ monitors:
     followRedirect: true
     linkable: false
 
-- id: db3
+- id: dbmc1
     name: Database Server [MYSQL for Minecraft Server]
     url: 'https://hariyonorizki.skom.id'
     urlLink : 'https://hariyonorizki.skom.id'
