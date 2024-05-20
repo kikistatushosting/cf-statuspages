@@ -51,6 +51,33 @@ monitors:
     followRedirect: true
     linkable: true
 
+  - id: db1
+    name: Database Server 1 [MYSQL Database]
+    url: 'https://monorail.proxy.rlwy.net/'
+    urlLink : 'https://monorail.proxy.rlwy.net'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: false
+
+- id: db2
+    name: Database Server 2 [Postgress SQL Database]
+    url: 'https://hariyonorizki.skom.id'
+    urlLink : 'https://hariyonorizki.skom.id'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: false
+
+- id: db3
+    name: Database Server [MYSQL for Minecraft Server]
+    url: 'https://hariyonorizki.skom.id'
+    urlLink : 'https://hariyonorizki.skom.id'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: false
+
   - id: server3
     name: Game Hosting 1 [Minecraft Bungeecord - 🇺🇸]
     url: 'https://magmanode.com'
